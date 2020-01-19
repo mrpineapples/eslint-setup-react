@@ -49,7 +49,7 @@ My eslint configuration for react projects
 }
 ```
 
-## Optional editor config
+## Optional .editorconfig
 ```
 root = true
 
