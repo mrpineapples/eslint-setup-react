@@ -11,7 +11,7 @@ My eslint configuration for react projects
       "source.fixAll.eslint": true
     }
   ```
-- Create `.eslintrc` at project root. It should look like this:
+- Create `.eslintrc.json` (needs `.json` to work on windows machines) at project root. It should look like this:
 ```json
 {
     "env": {
