@@ -3,7 +3,15 @@ My eslint configuration for react projects
 
 - Run: `npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier -D`
 
-- `.eslintrc` looks like this:
+- If using vscode, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - Add this to settings:
+  
+  ```json
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  ```
+- Create `.eslintrc` at project root. It should look like this:
 ```json
 {
     "env": {
@@ -49,7 +57,7 @@ My eslint configuration for react projects
 }
 ```
 
-## Optional .editorconfig
+## Optional `.editorconfig`
 ```
 root = true
 
