@@ -24,6 +24,7 @@ My eslint configuration for react projects
         "prettier",
         "prettier/react"
     ],
+    "parser": "babel-eslint",
     "rules": {
         "react/jsx-filename-extension": [
             1,
