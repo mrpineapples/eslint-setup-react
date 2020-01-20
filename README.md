@@ -1,7 +1,7 @@
 # personal-eslint-setup-react
-My eslint configuration for react projects
+My eslint/prettier/husky configuration for react projects
 
-- Run: `npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier -D`
+- Run: `npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier husky lint-staged -D`
 
 - If using vscode, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - Add this to settings:
@@ -61,6 +61,19 @@ My eslint configuration for react projects
     "plugins": [
         "prettier"
     ]
+}
+```
+- In `package.json` at the same level as dependencies add:
+```json
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+},
+"lint-staged": {
+  "./src/*.{js,jsx,ts,tsx}": [
+    "eslint src/*.js --fix"
+  ]
 }
 ```
 
