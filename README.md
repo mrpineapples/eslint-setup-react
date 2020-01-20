@@ -48,6 +48,12 @@ My eslint configuration for react projects
         ],
         "no-use-before-define": "off",
         "no-param-reassign": "off",
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
         "import/no-named-as-default": "off",
         "import/no-named-as-default-member": "off",
         "react/prefer-stateless-function": "off"
