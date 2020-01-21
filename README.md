@@ -43,7 +43,7 @@ My eslint/prettier/husky configuration for react projects
                 "bracketSpacing": true,
                 "trailingComma": "es5",
                 "singleQuote": false,
-                "printWidth": 120,
+                "printWidth": 80,
                 "tabWidth": 4
             }
         ],
@@ -79,7 +79,7 @@ My eslint/prettier/husky configuration for react projects
 }
 ```
 
-## Optional `.editorconfig`
+### Optional `.editorconfig`
 ```
 root = true
 
