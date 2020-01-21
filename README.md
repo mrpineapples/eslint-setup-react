@@ -11,6 +11,7 @@ My eslint/prettier/husky configuration for react projects
       "source.fixAll.eslint": true
     }
   ```
+### ESLint + Prettier config
 - Create `.eslintrc.json` (needs `.json` to work on windows machines) at project root. It should look like this:
 ```json
 {
@@ -63,6 +64,7 @@ My eslint/prettier/husky configuration for react projects
     ]
 }
 ```
+### Husky setup
 - In `package.json` at the same level as dependencies add:
 ```json
 "husky": {
