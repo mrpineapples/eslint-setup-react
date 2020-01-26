@@ -74,7 +74,7 @@ My eslint/prettier/husky configuration for react projects
 },
 "lint-staged": {
   "./src/*.{js,jsx,ts,tsx}": [
-    "eslint src/*.js --fix"
+    "eslint --fix"
   ]
 }
 ```
