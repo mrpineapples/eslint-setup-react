@@ -25,6 +25,8 @@ My eslint/prettier/husky configuration for react projects
         "airbnb",
         "prettier",
         "prettier/react"
+        // "plugin:@typescript-eslint/recommended",
+        // "prettier/@typescript-eslint"
     ],
     "parser": "babel-eslint",
     "rules": {
