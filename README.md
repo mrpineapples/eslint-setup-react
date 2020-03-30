@@ -35,6 +35,18 @@ My eslint/prettier/husky configuration for react projects
         // "prettier/@typescript-eslint"
     ],
     "parser": "babel-eslint",
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        }
+    },
     "rules": {
         "react/jsx-filename-extension": [
             1,
@@ -63,6 +75,16 @@ My eslint/prettier/husky configuration for react projects
             "error",
             {
                 "allowForLoopAfterthoughts": true
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
             }
         ],
         "import/no-named-as-default": "off",
