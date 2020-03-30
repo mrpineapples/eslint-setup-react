@@ -89,7 +89,8 @@ My eslint/prettier/husky configuration for react projects
         ],
         "import/no-named-as-default": "off",
         "import/no-named-as-default-member": "off",
-        "react/prefer-stateless-function": "off"
+        "react/prefer-stateless-function": "off",
+        // "react/prop-types": "off"
     },
     "plugins": [
         "prettier"
