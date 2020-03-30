@@ -35,7 +35,8 @@ My eslint/prettier/husky configuration for react projects
             {
                 "extensions": [
                     ".js",
-                    ".jsx"
+                    ".jsx",
+                    ".tsx"
                 ]
             }
         ],
