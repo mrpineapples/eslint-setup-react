@@ -64,7 +64,7 @@ My eslint/prettier/husky configuration for react projects
             {
                 "arrowParens": "always",
                 "bracketSpacing": true,
-                "trailingComma": "es5",
+                "trailingComma": "none",
                 "singleQuote": false,
                 "printWidth": 80,
                 "tabWidth": 4
