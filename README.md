@@ -60,7 +60,7 @@ My eslint/prettier/husky configuration for react projects
             }
         ],
         "prettier/prettier": [
-            "error",
+            "warn",
             {
                 "arrowParens": "always",
                 "bracketSpacing": true,
