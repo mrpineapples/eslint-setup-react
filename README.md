@@ -36,6 +36,7 @@ My eslint/prettier/husky configuration for react projects
         // "prettier/@typescript-eslint"
     ],
     "parser": "babel-eslint",
+    // "parser": "@typescript-eslint/parser",
     "settings": {
         "import/resolver": {
             "node": {
