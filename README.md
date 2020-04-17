@@ -20,6 +20,10 @@ My eslint/prettier/husky configuration for react projects
       "source.fixAll.eslint": true
     }
   ```
+  - If having issues with typescript specifically you may need to add this as well (however it has worked without it in the past):
+  ```json
+    "eslint.validate": ["typescript", "typescriptreact"]
+  ```
 ### ESLint + Prettier config
 - Create `.eslintrc.json` (needs `.json` to work on windows machines) at project root. It should look like this:
 ```json
