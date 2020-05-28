@@ -26,7 +26,7 @@ My eslint/prettier/husky configuration for react projects
   ```
 ### ESLint + Prettier config
 - Create `.eslintrc.json` (needs `.json` to work on windows machines) at project root. It should look like this:
-```json
+```js
 {
     "env": {
         "browser": true,
