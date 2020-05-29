@@ -1,36 +1,65 @@
 # personal-eslint-setup-react
+
 My eslint/prettier/husky configuration for react projects
 
 ## JavaScript
-- Run: `npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D`
-  - With husky: `npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier babel-eslint husky lint-staged -D`
-  
+
+-   Run:
+
+    ```bash
+    npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+    ```
+
+    -   With husky ([git hooks](https://github.com/typicode/husky#readme)):
+
+    ```bash
+    npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier babel-eslint husky lint-staged -D
+    ```
+
 ## TypeScript
-- Run: `npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin -D`
-  - With husky: `npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin husky lint-staged -D`
-- Uncomment the commented rules in the eslint config below when using typescript.
-  - There should only be one parser in use.
+
+-   Run:
+
+    ```bash
+    npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin -D
+    ```
+
+    -   With husky ([git hooks](https://github.com/typicode/husky#readme)):
+
+    ```bash
+    npm i eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin husky lint-staged -D
+    ```
+
+-   Uncomment the commented rules in the eslint config below when using typescript.
+    -   There should only be one parser in use.
 
 ### _Note_
-- If using vscode, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - Add this to settings:
-  
-  ```json
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
-    }
-  ```
-  - If having issues with typescript specifically you may need to add this as well (however it has worked without it in the past):
-  ```json
-    "eslint.validate": ["typescript", "typescriptreact"]
-  ```
+
+-   If using vscode, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+    -   Add this to settings:
+
+    ```json
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "[javascript]": {
+          "editor.formatOnSave": false,
+          "editor.codeActionsOnSave": {
+              "source.fixAll.eslint": true
+          }
+      }
+    ```
+
+    -   If having issues with typescript specifically you may need to add this as well (however it has worked without it in the past):
+
+    ```json
+      "eslint.validate": ["typescript", "typescriptreact"]
+    ```
+
 ### ESLint + Prettier config
-- Create `.eslintrc.json` (needs `.json` to work on windows machines) at project root. It should look like this:
+
+-   Create `.eslintrc.json` (needs `.json` to work on windows machines) at project root. It should look like this:
+
 ```js
 {
     "env": {
@@ -111,8 +140,10 @@ My eslint/prettier/husky configuration for react projects
 ```
 
 ### Standalone prettier config
-- Create `.prettierrc.json`
-  - This will apply to other files (`.css`, `.less`,`.json`...)
+
+-   Create `.prettierrc.json`
+    -   This will apply to other files (`.css`, `.less`,`.json`...)
+
 ```json
 {
     "printWidth": 80,
@@ -128,8 +159,10 @@ My eslint/prettier/husky configuration for react projects
 }
 ```
 
-### Husky setup
-- In `package.json` at the same level as dependencies add:
+### Husky setup (if using husky)
+
+-   In `package.json` at the same level as dependencies add:
+
 ```json
 "husky": {
   "hooks": {
@@ -144,6 +177,7 @@ My eslint/prettier/husky configuration for react projects
 ```
 
 ### Optional `.editorconfig`
+
 ```
 root = true
 
