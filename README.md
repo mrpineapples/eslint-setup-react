@@ -16,8 +16,13 @@ My eslint/prettier/husky configuration for react projects
   - Add this to settings:
   
   ```json
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
     }
   ```
   - If having issues with typescript specifically you may need to add this as well (however it has worked without it in the past):
@@ -104,6 +109,25 @@ My eslint/prettier/husky configuration for react projects
     ]
 }
 ```
+
+### Standalone prettier config
+- Create `.prettierrc.json`
+  - This will apply to other files (`.css`, `.less`,`.json`...)
+```json
+{
+    "printWidth": 80,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "always",
+    "proseWrap": "preserve"
+}
+```
+
 ### Husky setup
 - In `package.json` at the same level as dependencies add:
 ```json
