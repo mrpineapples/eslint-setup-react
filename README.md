@@ -37,7 +37,9 @@ My eslint/prettier/husky configuration for react projects
 
 -   If using vscode, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-    -   Add this to settings:
+    - Adding `"editor.formatOnSave": true` to your settings show be enough to get eslint working properly, however there have been times in the past that it didn't work.
+
+    - If the above doesn't work add this block to settings:
 
     ```json
       "editor.formatOnSave": true,
