@@ -110,7 +110,7 @@ My eslint/prettier/husky configuration for react projects
                 "singleQuote": false,
                 "tabWidth": 4
                 "trailingComma": "none",
-                "useTabs": true
+                "useTabs": false
             }
         ],
         "no-use-before-define": "off",
@@ -149,16 +149,16 @@ My eslint/prettier/husky configuration for react projects
 
 ```json
 {
-    "printWidth": 80,
-    "tabWidth": 4,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": false,
-    "trailingComma": "none",
+    "arrowParens": "always",
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
-    "arrowParens": "always",
-    "proseWrap": "preserve"
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "useTabs": false
 }
 ```
 
