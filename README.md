@@ -37,7 +37,7 @@ My eslint/prettier/husky configuration for react projects
 
 -   If using vscode, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-    - Adding `"editor.formatOnSave": true` to your settings show be enough to get eslint working properly, however there have been times in the past that it didn't work.
+    - Adding `"editor.formatOnSave": true` to your settings should be enough to get eslint working properly, however there have been times in the past that it didn't work.
 
     - If the above doesn't work add this block to settings:
 
@@ -106,10 +106,11 @@ My eslint/prettier/husky configuration for react projects
             {
                 "arrowParens": "always",
                 "bracketSpacing": true,
-                "trailingComma": "none",
-                "singleQuote": false,
                 "printWidth": 80,
+                "singleQuote": false,
                 "tabWidth": 4
+                "trailingComma": "none",
+                "useTabs": true
             }
         ],
         "no-use-before-define": "off",
