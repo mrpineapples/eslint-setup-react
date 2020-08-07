@@ -108,7 +108,7 @@ My eslint/prettier/husky configuration for react projects
                 "bracketSpacing": true,
                 "printWidth": 80,
                 "singleQuote": false,
-                "tabWidth": 4
+                "tabWidth": 4,
                 "trailingComma": "none",
                 "useTabs": false
             }
