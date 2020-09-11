@@ -1,65 +1,69 @@
 {
-    "env": {
-        "browser": true,
-        "jest": true,
-        "node": true
-    },
-    "extends": [
-        "airbnb",
-        "prettier",
-        "prettier/react"
-        // "plugin:@typescript-eslint/recommended",
-        // "prettier/@typescript-eslint"
-    ],
-    "parser": "babel-eslint",
-    // "parser": "@typescript-eslint/parser",
-    "settings": {
-        "import/resolver": {
-            "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
-            }
-        }
-    },
-    "rules": {
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [".js", ".jsx", ".tsx"]
-            }
-        ],
-        "prettier/prettier": [
-            "warn",
-            {
-                "arrowParens": "always",
-                "bracketSpacing": true,
-                "trailingComma": "none",
-                "singleQuote": false,
-                "printWidth": 80,
-                "tabWidth": 4
-            }
-        ],
-        "no-use-before-define": "off",
-        "no-param-reassign": "off",
-        "no-plusplus": [
-            "error",
-            {
-                "allowForLoopAfterthoughts": true
-            }
-        ],
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-                "js": "never",
-                "jsx": "never",
-                "ts": "never",
-                "tsx": "never"
-            }
-        ],
-        "import/no-named-as-default": "off",
-        "import/no-named-as-default-member": "off",
-        "react/prefer-stateless-function": "off"
-        // "react/prop-types": "off"
-    },
-    "plugins": ["prettier"]
+	"env": {
+		"browser": true,
+		"jest": true,
+		"node": true
+	},
+	"extends": [
+		"airbnb",
+		"prettier",
+		"prettier/react"
+		// "plugin:@typescript-eslint/recommended",
+		// "prettier/@typescript-eslint"
+	],
+	"parser": "babel-eslint",
+	// "parser": "@typescript-eslint/parser",
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	},
+	"rules": {
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx", ".tsx"]
+			}
+		],
+		"prettier/prettier": [
+			"warn",
+			{
+				"arrowParens": "always",
+				"bracketSpacing": true,
+				"jsxBracketSameLine": false,
+				"printWidth": 80,
+				"proseWrap": "preserve",
+				"semi": true,
+				"singleQuote": false,
+				"tabWidth": 4,
+				"trailingComma": "none",
+				"useTabs": true
+			}
+		],
+		"no-use-before-define": "off",
+		"no-param-reassign": "off",
+		"no-plusplus": [
+			"error",
+			{
+				"allowForLoopAfterthoughts": true
+			}
+		],
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"import/no-named-as-default": "off",
+		"import/no-named-as-default-member": "off",
+		"react/prefer-stateless-function": "off"
+		// "react/prop-types": "off"
+	},
+	"plugins": ["prettier"]
 }

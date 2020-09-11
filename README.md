@@ -37,9 +37,8 @@ My eslint/prettier/husky configuration for react projects
 
 -   If using vscode, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-    - Adding `"editor.formatOnSave": true` to your settings should be enough to get eslint working properly, however there have been times in the past that it didn't work.
-
-    - If the above doesn't work add this block to settings:
+    -   Adding `"editor.formatOnSave": true` to your settings should be enough to get eslint working properly, however there have been times in the past that it didn't work.
+    -   If the above doesn't work add this block to settings:
 
     ```json
       "editor.formatOnSave": true,
@@ -62,83 +61,75 @@ My eslint/prettier/husky configuration for react projects
 
 -   Create `.eslintrc.json` (needs `.json` to work on windows machines) at project root. It should look like this:
 
-```js
+```jsonc
 {
-    "env": {
-        "browser": true,
-        "jest": true,
-        "node": true
-    },
-    "extends": [
-        "airbnb",
-        "prettier",
-        "prettier/react"
-        // "plugin:@typescript-eslint/recommended",
-        // "prettier/@typescript-eslint"
-    ],
-    "parser": "babel-eslint",
-    // "parser": "@typescript-eslint/parser",
-    "settings": {
-        "import/resolver": {
-            "node": {
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".ts",
-                    ".tsx"
-                ]
-            }
-        }
-    },
-    "rules": {
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".tsx"
-                ]
-            }
-        ],
-        "prettier/prettier": [
-            "warn",
-            {
-                "arrowParens": "always",
-                "bracketSpacing": true,
-                "printWidth": 80,
-                "singleQuote": false,
-                "tabWidth": 4,
-                "trailingComma": "none",
-                "useTabs": false
-            }
-        ],
-        "no-use-before-define": "off",
-        "no-param-reassign": "off",
-        "no-plusplus": [
-            "error",
-            {
-                "allowForLoopAfterthoughts": true
-            }
-        ],
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-                "js": "never",
-                "jsx": "never",
-                "ts": "never",
-                "tsx": "never"
-            }
-        ],
-        "import/no-named-as-default": "off",
-        "import/no-named-as-default-member": "off",
-        "react/prefer-stateless-function": "off",
-        // "react/prop-types": "off"
-    },
-    "plugins": [
-        "prettier"
-    ]
+	"env": {
+		"browser": true,
+		"jest": true,
+		"node": true
+	},
+	"extends": [
+		"airbnb",
+		"prettier",
+		"prettier/react"
+		// "plugin:@typescript-eslint/recommended",
+		// "prettier/@typescript-eslint"
+	],
+	"parser": "babel-eslint",
+	// "parser": "@typescript-eslint/parser",
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	},
+	"rules": {
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx", ".tsx"]
+			}
+		],
+		"prettier/prettier": [
+			"warn",
+			{
+				"arrowParens": "always",
+				"bracketSpacing": true,
+				"jsxBracketSameLine": false,
+				"printWidth": 80,
+				"proseWrap": "preserve",
+				"semi": true,
+				"singleQuote": false,
+				"tabWidth": 4,
+				"trailingComma": "none",
+				"useTabs": true
+			}
+		],
+		"no-use-before-define": "off",
+		"no-param-reassign": "off",
+		"no-plusplus": [
+			"error",
+			{
+				"allowForLoopAfterthoughts": true
+			}
+		],
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"import/no-named-as-default": "off",
+		"import/no-named-as-default-member": "off",
+		"react/prefer-stateless-function": "off"
+		// "react/prop-types": "off"
+	},
+	"plugins": ["prettier"]
 }
 ```
 
@@ -149,16 +140,16 @@ My eslint/prettier/husky configuration for react projects
 
 ```json
 {
-    "arrowParens": "always",
-    "bracketSpacing": true,
-    "jsxBracketSameLine": false,
-    "printWidth": 80,
-    "proseWrap": "preserve",
-    "semi": true,
-    "singleQuote": false,
-    "tabWidth": 4,
-    "trailingComma": "none",
-    "useTabs": false
+	"arrowParens": "always",
+	"bracketSpacing": true,
+	"jsxBracketSameLine": false,
+	"printWidth": 80,
+	"proseWrap": "preserve",
+	"semi": true,
+	"singleQuote": false,
+	"tabWidth": 4,
+	"trailingComma": "none",
+	"useTabs": true
 }
 ```
 
@@ -185,20 +176,15 @@ My eslint/prettier/husky configuration for react projects
 root = true
 
 [*]
-indent_style = space
+indent_style = tab
 indent_size = 4
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[{*.js,*.css,*.less,*.html}]
+[*.{html,json,yml}]
 indent_style = space
-indent_size = 4
-
-[{*.json,*.yml}]
-indent_style = space
-indent_size = 4
 
 [*.md]
 trim_trailing_whitespace = false
